@@ -1,0 +1,11 @@
+# Ignore all zip files
+*.zip
+
+# Ignore all CSV files
+*.csv
+
+# Ignore all exe files
+*.exe
+
+# Ignore jupyter files
+.ipynb_checkpoints
