@@ -17,7 +17,7 @@ import datetime
 # In[2]:
 
 
-def scrape(start_date, end_date, country='france'):
+def scrape(start_date, end_date, country='france', ligue='ligue-1'):
     '''
     Scrapes the website www.livescore.com for soccer scores
     @param start_date, end_date the date interval which scores we want
@@ -38,7 +38,7 @@ def scrape(start_date, end_date, country='france'):
     for d in range(nb_days+1):
         today = (begin + datetime.timedelta(d))
         ## First build the url we want to visit
-        url = 'https://www.livescore.com/en/football/{}/ligue-1/#/{}'.format(country, today.strftime("%Y%m%d"))
+        url = 'https://www.livescore.com/en/football/{}/{}/#/{}'.format(country, ligue, today.strftime("%Y%m%d"))
 
         ## Get the required data from the url
         browser.get(url)
