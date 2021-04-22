@@ -9,3 +9,6 @@
 
 # Ignore jupyter files
 .ipynb_checkpoints
+
+# Ignore python cached files
+__pycache__
